@@ -4,9 +4,78 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src="validation.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Sing up</title>
 </head>
 <body>
+
+  <div class="imageContainer">
+    <div class="logo">
+      <img src="img/odin-lined.png" alt="logo"> <span> ODIN</span>
+    </div>
+    <div class="footerImage">
+      <p>Photo by Halie West on <a href="https://unsplash.com/es/fotos/25xggax4bSA">unsplash</a></p>
+    </div>
+    <img src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="Hallie West">
+    
+  </div>
+
+  <div class="container">
+    <div class="message">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize you deepest dreams. Sign up now to get started.</p>
+      <p>You know you want to.</p>
+    </div>
+
+      
+    
+      <form action="" method="post">
+        <div class="formContainer">  
+        <p class="bolder">Let's Do it</p>
+        <div class="row">
+          <div class="item">
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Odin" required>
+          </div>
+          <div class="item">
+            <label for="lastName">LAST NAME</label>                    
+            <input type="text" name="lastName" id="lastName" placeholder="Odinson" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item">
+            <label for="email">EMAIL</label>    
+            <input type="email" name="email" id="email" placeholder="test@test.com" required> 
+          </div>
+          <div class="item">
+            <label for="phone">PHONE NUMBER</label>           
+            <input type="number" name="phone" id="phone" placeholder="(54) 9113476000 " required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item" id="pass">
+            <label for="password">PASSWORD</label>    
+            <input type="password" name="password" id="password" minlength="8" required>
+          </div>
+          <div class="item">
+            <label for="passwordConfirmation">CONFIRM PASSWORD</label>
+            <input type="password" name="passwordConfirmation" minlength="8" id="passwordConfirmation" required>
+          </div> 
+        </div>
+          
+          
+                
+      </div>  
+      
+       
+
+    <div class="createAccount">
+        <button type="submit">CREATE ACCOUNT</button>
+        <div class="login"></div>
+    </div>
+
+    </form>
+  </div>
   
 </body>
 </html>
